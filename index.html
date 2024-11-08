@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lectura de Mangas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-primary text-white shadow">
+        <div class="logo">
+            <h2>Mi Manga</h2> <!-- Puedes reemplazar esto con una imagen de logo -->
+        </div>
+        <div class="search-bar mx-auto">
+            <input type="text" class="form-control" placeholder="Buscar mangas...">
+        </div>
+        <div class="user-profile">
+            <img src="img/avatar.jpg" alt="Perfil" class="rounded-circle avatar"> <!-- Imagen de perfil -->
+        </div>
+    </header>
+
+    <!-- Slider -->
+    <div id="promoSlider" class="carousel slide my-4" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/slider1.jpg" class="d-block w-100" alt="Promoción 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Promoción 1</h5>
+                    <p>¡No te pierdas nuestras ofertas especiales!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider2.jpg" class="d-block w-100" alt="Promoción 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Promoción 2</h5>
+                    <p>Descubre los últimos lanzamientos de mangas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/slider3.jpg" class="d-block w-100" alt="Promoción 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Promoción 3</h5>
+                    <p>¡Lee gratis los primeros capítulos!</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#promoSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#promoSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+
+    <!-- Sección de Mangas Actualizados -->
+    <section id="updated-mangas" class="my-4">
+        <h3>Mangas Actualizados Recientemente</h3>
+        <div class="row">
+            <!-- Manga 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/cover1.jpg" class="card-img-top" alt="Manga 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dai Dark</h5>
+                        <p class="card-text">Una historia oscura y divertida sobre Zaka Sanko y su extraño poder.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manga 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/cover2.jpg" class="card-img-top" alt="Manga 2">
+                    <div class="card-body">
+                        <h5 class="card-title">#DRCL - Midnight Children</h5>
+                        <p class="card-text">Una adaptación única del clásico Drácula, llena de misterio y arte impresionante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manga 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/cover3.jpg" class="card-img-top" alt="Manga 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rastros de Sangre</h5>
+                        <p class="card-text">Una obra perturbadora que explora la relación entre madre e hijo en un contexto oscuro.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manga 4 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="img/cover4.jpg" class="card-img-top" alt= "Manga 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Skip and Loafer</h5>
+                        <p class="card-text">Una comedia romántica que sigue las aventuras de dos estudiantes en la escuela secundaria.</p>
+                    </div >
+                </div>
+            </div >
+
+            <!-- Manga 5 -->
+            <div class ="col-md-4 mb-3 ">
+                <div class ="card ">
+                    <img src ="https://via.placeholder.com/150x200?text=Manga+5 "class ="card-img-top "alt ="Manga 5 ">
+                    <div class ="card-body ">
+                        <h5 class ="card-title ">One Piece</ h5 >
+                        <p class ="card-text ">La épica aventura pirata que sigue emocionando a millones de lectores en todo el mundo.</ p >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class ="container my-4 ">
+        <div id ="manga-list "class ="row ">
+            <!-- Lista de mangas se generará aquí -->
+        </div>
+    </div>
+
+    <footer class="footer text-center mt-4 p-3 bg-dark text-white">
+        <div class="container">
+            <img src="img/cubant1ko.png" alt="Logo" class="footer-logo"> <!-- Reemplaza con la ruta de tu logo -->
+            <p class="my-2">CubanT1ko</p>
+            <a href="https://github.com/CubanT1ko" target="_blank" class="text-white">Visita mi GitHub</a>
+        </div>
+    </footer>
+
+    <script src ="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src ="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js "></script>
+    <script src ="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+    <script src ="js/main.js "></script>
+</body>
+</html>
