@@ -5,7 +5,7 @@
 
 **MangaKa** is a template designed for building your own manga reading website. It provides a simple and effective starting point for developers who want to create a user-friendly platform for manga enthusiasts.
 
-![MangaKa Screenshot]([https://via.placeholder.com/800x400.png?text=MangaKa+Screenshot](https://github.com/CubanT1ko/MangaKa/blob/main/screenshoot.png)) <!-- Replace with an actual screenshot -->
+![MangaKa Screenshot]([[https://via.placeholder.com/800x400.png?text=MangaKa+Screenshot](https://github.com/CubanT1ko/MangaKa/blob/main/screenshoot.png](https://raw.githubusercontent.com/CubanT1ko/MangaKa/refs/heads/main/screenshoot.png))) <!-- Replace with an actual screenshot -->
 
 ## :loudspeaker: Features
 
